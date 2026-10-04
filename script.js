@@ -1,12 +1,12 @@
 let currentExpression = '';
 
 function appendNumber(num) {
-    currentExpression += num;
+    currentExpression = currentExpression + num;
     document.getElementById('input1').value = currentExpression;
 }
 
 function appendOperator(operator) {
-    currentExpression += ` ${operator} `;
+    currentExpression = currentExpression + ` ${operator} `;
     document.getElementById('input1').value = currentExpression;
 }
 
@@ -23,3 +23,8 @@ function clearInput() {
     currentExpression = '';
     document.getElementById('input1').value = '';
 }
+
+function appendDelete() {
+    currentExpression = currentExpression.slice(0, -1);
+    document.getElementById('input1').value = currentExpression;
+} 

@@ -71,5 +71,8 @@ background: linear-gradient(90deg,rgba(8, 115, 255, 1) 0%, rgba(141, 215, 247, 1
 
 .result {
     background: #6fff6f;
-    grid-column: span 2;
+}
+
+.operator:active , .number:active, .c:active, .result:active {
+    box-shadow: 0 0 6px rgb(255, 250, 250);
 }

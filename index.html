@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <title>Calcular</title>
 </head>
 <body>
     <main class="main">
         <input type="text" id="input1" disabled placeholder="0">
         <div class="tool_calcular">
-            <button onclick="appendOperator('+')" class="operator">+</button>
-            <button onclick="appendOperator('-')" class="operator">-</button>
-            <button onclick="appendOperator('×')" class="operator">×</button>
+            <button onclick="appendDelete()"><i class="fa-solid fa-delete-left"></i></button>
+            <button onclick="clearInput()" class="C">C</button>
             <button onclick="appendOperator('÷')" class="operator">÷</button>
+            <button onclick="appendOperator('×')" class="operator">×</button>
             <button onclick="appendNumber('9')" class="number">9</button>
             <button onclick="appendNumber('8')" class="number">8</button>
             <button onclick="appendNumber('7')" class="number">7</button>
+            <button onclick="appendOperator('-')" class="operator">-</button>
             <button onclick="appendNumber('6')" class="number">6</button>
             <button onclick="appendNumber('5')" class="number">5</button>
             <button onclick="appendNumber('4')" class="number">4</button>
+            <button onclick="appendOperator('+')" class="operator">+</button>
             <button onclick="appendNumber('3')" class="number">3</button>
             <button onclick="appendNumber('2')" class="number">2</button>
             <button onclick="appendNumber('1')" class="number">1</button>
-            <button onclick="appendNumber('0')" class="number">0</button>
-            <button onclick="appendOperator('.')" class="number">.</button>
-            <button onclick="clearInput()" class="C">C</button>
             <button onclick="calculateResult()" class="result">=</button>
+            <button onclick="appendNumber('0')" class="number">0</button>
+            <button onclick="appendNumber('00')" class="number">00</button>
+            <button onclick="appendOperator('.')" class="number">.</button>
         </div>
     </main>
 </body>
